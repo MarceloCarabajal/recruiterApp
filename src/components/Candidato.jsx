@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Candidato = ({valor, index, onBuscarUno}) => {
+const Candidato = ({valor, index, onBuscarUno, onGuardarUno}) => {
   return (
     <>
-        <div className='usuario'>
+        <div className='usuario' key={index}>
             <div className='foto'>
                 <img src={valor.picture.large} alt="" />
             </div>
@@ -15,7 +15,7 @@ const Candidato = ({valor, index, onBuscarUno}) => {
             </div>
             <div className='botones'>
                 <button onClick={() => onBuscarUno(index)} className='negro'>Ocultar</button>
-                <button className='violeta'>Guardar</button>            </div>
+                <button onClick={() => onGuardarUno(valor)}  className='violeta'>Guardar</button>            </div>
             
         </div>
     </>

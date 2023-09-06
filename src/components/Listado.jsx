@@ -20,13 +20,17 @@ const Listado = () => {
     })
   }
 
+  const guardarUno = (valor) => {
+
+  }
+
   return (
     <>
     <div className="presentacion">
       {
         candidato.map( (valor, index) => {
           return(
-            <Candidato valor={valor} index={index} onBuscarUno={buscarUno}/>
+            <Candidato valor={valor} index={index} onBuscarUno={buscarUno} onGuardarUno={guardarUno}/>
           )
         })
       }
