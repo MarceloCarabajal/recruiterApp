@@ -1,5 +1,3 @@
-
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Listado from '../components/Listado'
 import Gestion from '../components/Gestion'

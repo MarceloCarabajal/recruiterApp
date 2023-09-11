@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import {miSlice, departamentosSlice } from "./miSlice";
+import {departamentosSlice, miSlice } from "./miSlice";
 
 export default configureStore({
-    reducer:
+    reducer:{
         misTrabajadores: miSlice.reducer,
         misDepartamentos: departamentosSlice.reducer,
+    }
 })
